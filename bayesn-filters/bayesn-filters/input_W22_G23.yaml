@@ -1,0 +1,12 @@
+mode: training
+num_chains: 4
+num_warmup: 500
+num_samples: 500
+chain_method: parallel
+initialisation: T21
+l_knots: [3000.0, 6000.0, 9000.0, 12000.0, 13000.0 18500.0]
+tau_knots: [-10.0, 0.0, 10.0, 20.0, 30.0, 40.0]
+filters: filters.yaml
+map: {g: g_DES, r: r_DES, i: i_DES, z: z_DES}
+data_root: /PATH/TO/DATA/ROOT
+input_table: M20_and_T21_training_set.txt
